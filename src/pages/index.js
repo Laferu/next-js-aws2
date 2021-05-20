@@ -2,15 +2,15 @@
 
 import Head from 'next/head'
 // import Image from 'next/image'
-// import axios from 'axios'
+import axios from 'axios'
 // import styles from '../styles/Home.module.css'
 
 export default function Home({ teste = 'Hello World' }) {
   // const [teste2, setTeste2] = useState('')
 
-  // useEffect(() => {
-  //   axios.get('/api/hello').then(e => console.log(e.data))
-  // }, [])
+  useEffect(() => {
+    axios.get('/api/hello').then(e => console.log(e.data))
+  }, [])
 
   return (
     <div>
