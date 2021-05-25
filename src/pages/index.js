@@ -75,10 +75,10 @@ export default function Home({ teste = 'Hello World' }) {
   )
 }
 
-// export const getServerSideProps = () => {
-//   return {
-//     props: {
-//       teste: process.env.TESTE
-//     }
-//   }
-// }
+export const getServerSideProps = () => {
+  return {
+    props: {
+      teste: process.env.TESTE
+    }
+  }
+}
